@@ -1,0 +1,14 @@
+version: '19.03.1'
+services:
+  dev-db:
+    image: postgres:13
+    port: 
+      -5050:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: nest
+    networks:
+      - freecodecamp
+networks:
+  freecodecamp:          
